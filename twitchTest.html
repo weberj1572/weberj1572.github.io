@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->
+  <title>TEST</title>
+  <!--<link rel="stylesheet" href="style.css">-->
+  <style>
+
+    html {
+      max-width:100%;
+    }
+  
+    #twitch-embed, #frame, #twitch, #nplive-stream {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Add a placeholder for the Twitch embed 
+    <div id="twitch-embed"></div>-->
+
+    <!-- Load the Twitch embed script 
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>-->
+
+
+
+<!-- embed twitch video -->
+<div id="twitch">
+<!--<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+      <div id="nplive-stream" style="text-align: center; height:auto;"></div>
+      <script type="text/javascript">
+      var options = {
+        layout: "video-with-chat",
+        width: 854,
+        height: 480,
+        channel: "FoxholeLive",
+        autoplay: "true",
+        allowfullscreen: "true",
+        parent: ["foxholelive.org", "officialj.com"]
+      };
+      var player = new Twitch.Player("nplive-stream", options);
+      player.setVolume(0.5);
+</script>-->
+    <!--
+      Create a Twitch.Embed object that will render
+      within the "twitch-embed" root element.
+    -->
+   <!-- <script type="text/javascript">
+      var embed = new Twitch.Embed("twitch-embed", {
+        layout: "video-with-chat",
+        width: 960, //1280
+        height: 540, //720
+        channel: "FoxholeLive",
+        autoplay: "true",
+        allowfullscreen: "true",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["foxholelive.org", "officialj.com"]
+        
+      });
+
+      embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
+      });
+
+      //shrink chatbox on mobile?
+    </script>
+</div>
+
+<div id="frame"><iframe frameborder="0"
+        scrolling="no"
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/FoxholeLive/chat?parent=officialj.com"
+        height="500"
+        width="350">
+</iframe>--></div>
+
+</body>
+</html>
+
+
